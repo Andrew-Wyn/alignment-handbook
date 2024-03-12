@@ -88,6 +88,9 @@ def main():
     data_args.truncation_side = "left"  # Truncate from left to ensure we don't lose labels in final turn
     tokenizer = get_tokenizer(model_args, data_args)
 
+    print("eccomi")
+    print(raw_datasets)
+
     #####################
     # Apply chat template
     #####################

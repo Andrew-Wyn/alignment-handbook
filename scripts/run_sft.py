@@ -152,6 +152,12 @@ def main():
         dataset_kwargs=training_args.dataset_kwargs,
     )
 
+    # adding special tokens
+    special_tokens_dict = {'additional_special_tokens': ['<|im_start|>','<|im_end|>']}
+    tokenizer.add_special_tokens(special_tokens_dict, replace_additional_special_tokens=False)
+    
+    trainer.model.resize_token_embeddings(len(tokenizer))
+
     ###############
     # Training loop
     ###############

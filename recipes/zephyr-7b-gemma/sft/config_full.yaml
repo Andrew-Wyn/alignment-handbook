@@ -1,5 +1,5 @@
 # Model arguments
-model_name_or_path: google/gemma-7b
+model_name_or_path: /leonardo_scratch/large/userexternal/lmoroni0/minestral_models/minestral-1B-100B_it-100B_en-cx-04032024
 model_revision: main
 tokenizer_name_or_path: philschmid/gemma-tokenizer-chatml # Custom tokenizer with <|im_start|> and <|im_end|> tokens
 torch_dtype: bfloat16
